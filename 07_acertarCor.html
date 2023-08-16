@@ -10,23 +10,36 @@
     //NÃO FOI DESSA VEZ... TENTE NOVAMENTE!
 
     //ENTRADA
-
-
+    const cores = ["azul", "amarelo", "verde", "branco", "preto", "marrom", "cinza"];
+    const corinf = prompt("Insira uma cor.".trim().toLowerCase());
+    const num = Math.floor(Math.random() * 7);
     //PROCESSAMENTO
+    if (corinf == "cinza" && num == 6) {
+        alert(`Parabéns zika, está com sorte na cor ${corinf}!`);
+    }
+    else if (corinf == "marrom" && num == 5) {
+        alert(`Parabéns zika, está com sorte na cor ${corinf}!`);
+    }
+    else if (corinf == "preto" && num == 4) {
+        alert(`Parabéns zika, está com sorte na cor ${corinf}!`);
+    }
+    else if (corinf == "branco" && num == 3) {
+        alert(`Parabéns zika, está com sorte na cor ${corinf}!`);
+    }
+    else if (corinf == "verde" && num == 2) {
+        alert(`Parabéns zika, está com sorte na cor ${corinf}!`);
+    }
+    else if (corinf == "amarelo" && num == 1) {
+        alert(`Parabéns zika, está com sorte na cor ${corinf}!`);
+    }
+    else if (corinf == "azul" && num == 0) {
+        alert(`Parabéns zika, está com sorte na cor ${corinf}!`);
+    }
 
-
+    else {
+        alert(`É meu consagrado, não foi dessa vez, tenta denovo.`);
+    }
     //SAÍDA
 
 
-
-    /*
-    Para gerar números aleatórios, há a função random, da biblioteca Math. Nesse caso, o comando deverá ser o Math.random().
-    Contudo, o Math.random() irá gerar um número aleatório no intervalo entre 0 e 1, por exemplo, 0.678234283472.
-    Para chegarmos no intervalo que queremos, devemos multiplicar o número randômico por 7 e também usar a função Math.floor() para arredondar para baixo.
-    Execute várias vezes os comandos acima e diferentes combinações para entender a lógica da geração de números randômicos.
-
-    Para o problema em questão, utilizar-se-á a junção das seguintes funções e operações:
-    Math.floor(Math.random() * 7);
-    Entretanto, não faça uma cópia e cola apenas. Execute os comandos acima para compreender a lógica.
-    */
 </script>

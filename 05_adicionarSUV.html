@@ -6,10 +6,17 @@
     //Apresente a lista antiga de SUVs e a nova lista, após a adição do veículo solicitado.
 
     //ENTRADA
-
-
+    let suv = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    const adicionar = prompt(`Deseja adicionar algum carro a lista? "S" para sim e "N" para não.`.trim().toUpperCase());
     //PROCESSAMENTO
-
+    if (adicionar == "S") {
+        let carroadicionar = prompt(`Qual carro deseja adicionar?`)
+        suv.push(carroadicionar)
+        alert(`A lista está assim ${suv}.`);
+    }
+    else {
+        alert(`Esta é a lista ${suv}.`);
+    }
 
     //SAÍDA
 
