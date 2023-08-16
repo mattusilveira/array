@@ -7,21 +7,28 @@
     //As bebidas a serem compradas são: bebida1, bebida2, bebida3.
     //A lista completa de compras é: fruta1, fruta2, fruta3, bebida1, bebida2, bebida3.
 
+
     //ENTRADA
-    let arr = [];
-    const fruta1 = prompt(`Informe uma fruta:`).trim();
-    const fruta2 = prompt(`Informe outra fruta:`).trim();
-    const fruta3 = prompt(`Informe só mais uma fruta:`.trim());
-    const bebida1 = prompt(`Informe uma bebida:`).trim();
-    const bebida2 = prompt(`Informe outra bebida:`).trim();
-    const bebida3 = prompt(`Informe só mais uma bebida:`.trim());
+    let Bebidas = [];
+    let Frutas = [];
+    let frutas, bebidas;
+
+
+    for (fruta = 0; fruta < 3; fruta++) {
+        frutas = prompt(`informe uma fruta desejada`);
+        Frutas.push(frutas);
+    }
+    for (bebida = 0; bebida < 3; bebida++) {
+        bebidas = prompt(`informe uma bebida desejada`);
+        Bebidas.push(bebidas);
+    }
 
     //PROCESSAMENTO
-    let fruta = [fruta1, fruta2, fruta3,];
-    let bebida = [bebida1, bebida2, bebida3];
-    let lista = [fruta1, fruta2, fruta3, bebida1, bebida2, bebida3]
+    listaDeCompras = Frutas.concat(Bebidas)
+
+    alert(`as frutas que seram compradas são:` + Frutas);
+    alert(`as bebidas que seram compradas são: ` + Bebidas);
+    alert(`a lista completa de compras é: ` + listaDeCompras);
+
     //SAÍDA
-    alert(`As frutas a serem compradas são: ${fruta}.`);
-    alert(`As bebidas a serem compradas são: ${bebida}.`);
-    alert(`A lista completas de compras é: ${lista}.`);
 </script>
